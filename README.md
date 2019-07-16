@@ -1,4 +1,4 @@
-# heroplayer
+# HeroPlayer
 A Web Media Player by JavaScript
 
 # Live Demo

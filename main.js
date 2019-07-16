@@ -455,6 +455,7 @@ const videoPlay = function(inPlay = '', inKey = 'play') {
     if (key === 'play') {
         log('--->videoPlay: key is play.')
         player.play()
+        videoInfo(player)
 
         if (playButton.classList.contains('icon-play')) {
             playButton.classList.remove("icon-play")

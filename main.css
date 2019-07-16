@@ -1,0 +1,490 @@
+.heroplayer {
+    height: auto;
+    width: 50%;
+    min-width: 480px;
+
+    margin: 0 auto;
+    
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    
+    
+    text-align: center;
+
+
+}
+
+.infos {
+    position: relative;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 20px;
+
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.infos:hover {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 8px 16px 0px rgba(0, 0, 0, 0.1), 0 16px 32px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+video {
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    border-radius: 20px 20px 5px 5px;
+
+}
+
+.times {
+    transition: all 0.3s ease-out;
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+
+    border-radius: 0px 0px 20px 20px;
+
+    font-size: 1vw;
+
+    color:rgba(1, 124, 212, 0.2);
+    /* text-shadow: rgb(240, 240, 240) 1px 1px 0px; */
+    font-weight: bold;
+
+    background-color: transparent;
+}
+.times:hover {
+    color: rgb(1, 124, 212);
+}
+
+#id-info-nowTime {
+    position: absolute;
+    left: 2%;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#id-info-progress {
+    margin: 0px 2px 0px 2px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    bottom: 0px;
+    width: 0;
+    height: 19px;
+    margin: 0 auto;
+
+    background-color: rgb(1, 124, 212);
+    border-radius: 0px 0px 10px 10px;
+}
+#id-info-progress:hover {
+    transition: all 0.5s ease-in;
+
+    cursor: pointer;
+
+    background-color: rgb(1, 124, 212);
+}
+
+#id-info-progressBar {
+    margin: 0px 2px 0px 2px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    bottom: 0px;
+    width: 75%;
+    height: 19px;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0px 0px 10px 10px;
+}
+#id-info-progressBar:hover {
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+
+    background-color:rgba(255, 255, 255, 0.2);
+    border: solid rgba(1, 124, 212, 0.5);
+    border-width: 0px 1px 1px 1px;
+    /* border-radius:  */
+}
+
+#id-info-allTime {
+    /* border: 1px solid red; */
+
+    position: absolute;
+    right: 2%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    /* text-align: center; */
+}
+
+
+.tools {
+    /* z-index: 1; */
+    display: block;
+    position: relative;
+
+    margin: 10px 0px 5px 0px;
+    padding: 10px;
+
+    min-height: 20px;
+
+    width: auto;
+    height: 100%;
+
+    max-height: 50px;
+
+    top: 50%;
+    /* transform: translateY(-50%); */
+
+    border-radius: 20px;
+
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(235, 235, 235, 0.5);
+
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tools:hover {
+    transition: background-color 3s ease-in;
+    background-color: rgba(235, 235, 235, 0.9);
+
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 8px 16px 0px rgba(0, 0, 0, 0.1), 0 16px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    position: absolute;
+
+    margin: 2px;
+    padding: 0px;
+
+    height: 20px;
+    width: 20px;
+
+    border: 0px solid red;
+    background-color: transparent;
+
+    cursor: pointer;
+    outline: none;
+
+    font-size: 20px;
+    color: rgb(1, 124, 212);
+    text-align: center;
+}
+.button:hover {
+    transition: all 0.3s ease;
+
+    color: rgb(115, 197, 255);    
+    text-shadow: rgb(172, 232, 255) 1px 0 10px;
+}
+.button-active {
+    color: rgb(115, 197, 255); 
+}
+
+.tools-left {
+    display: inline-block;
+    position: relative;
+    
+    text-align: center;
+    /* border: 1px solid red; */
+    
+    width: 30%;
+    height: 20px;
+    
+    /* background-color: lightpink; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* height: 100%; */
+    /* left: 20px; */
+}
+
+#id-button-loop {
+    position: relative;
+    float: left;
+
+    margin: 0px 4px 0px 4px;
+}
+
+#id-button-mute {
+    position: relative;
+    float: left;
+
+    margin: 0px 4px 0px 4px;
+}
+
+/* #id-button-volume {
+    position: relative;
+    float: left;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    
+    margin: 0px 4px 0px 4px;
+    
+    width: 50%;
+    height: 10px;
+
+    border: 1px solid pink;
+    border-radius: 5px;
+} */
+
+#id-button-volumeBar {
+    transition: all 0.5s ease-in;
+
+    position: relative;
+    float: left;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    
+    margin: 0px 0px 0px 0px;
+    
+    width: 50%;
+    height: 10px;
+
+    /* border: 1px solid pink; */
+    border: 1px solid rgb(136, 202, 250);
+    border-radius: 5px;
+    /* background-color: pink; */
+
+    background: linear-gradient(to right, rgb(1, 124, 212) 0%, rgb(1, 124, 212) 50%, rgba(255, 255, 255, 0.1) 51%);
+}
+#id-button-volumeBar:hover {
+    transition: all 0.3s ease-in;
+
+    border: 1px solid rgba(1, 124, 212, 0.9);
+}
+
+
+.tools-center {
+    display: inline-block;
+    position: relative;
+    
+    text-align: center;
+
+    width: 30%;
+    height: 20px;
+    
+    /* border: 1px solid green; */
+    
+
+    /* float: left; */
+    /* background-color: lightpink; */
+    /* height: 100%; */
+    /* left: 20px; */
+}
+#id-button-play {
+    position: relative;
+    float: left;
+
+    left: 50%;
+    transform: translateX(-60%);
+
+    margin: 0px 2px 0px 2px;
+}
+#id-button-play:hover {
+    color: rgb(83, 176, 243);
+    text-shadow: rgb(54, 197, 253) 1px 0px 10px;
+}
+#id-button-play:active {
+    color: rgb(1, 124, 212);
+    text-shadow: rgb(54, 197, 253) 1px 0px 10px;
+}
+.fa-play {
+    color: rgb(1, 124, 212);
+    text-shadow: rgb(54, 197, 253) 1px 0px 10px;
+}
+
+.tools-right {
+    display: inline-block;
+    position: relative;
+
+    text-align: center;
+    
+    width: 30%;
+    height: 20px;
+    
+    /* border: 1px solid blue; */
+
+    /* float: left; */
+    /* background-color: lightpink; */    
+    /* height: 100%; */
+    /* left: 20px; */
+}
+
+#id-button-expand {
+    position: relative;
+    float: right;
+
+    margin: 0px 4px 0px 4px;
+
+    /* bottom: 2px; */
+    /* right: 20px; */
+}
+
+#id-button-list {
+    position: relative;
+    float: right;
+
+    margin: 0px 4px 0px 4px;
+}
+
+
+.lists {
+    /* display: block;
+    position: relative; */
+    visibility: visible;
+    display: block;
+
+    margin: 10px 0px 10px 0px;
+    padding: 20px 0px;
+
+    width: auto;
+    min-height: 20px;
+    max-height: 500px;
+
+    /* border: 1px solid pink; */
+    border-radius: 20px;
+
+    transition: background-color 1s ease-in-out;
+    background-color: rgba(235, 235, 235, 0.5);
+
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.lists:hover {
+    transition: background-color 3s ease-in;
+    background-color: rgba(235, 235, 235, 0.9);
+
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 8px 16px 0px rgba(0, 0, 0, 0.1), 0 16px 32px 0px rgba(0, 0, 0, 0.1);
+}
+.listsHidden {
+    /* transition: background-color 5s ease-in; */
+    display: none;
+}
+
+
+.list {
+    transition: all 0.5s ease-out;
+
+    float:left;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    
+    
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+
+    color: rgba(1, 124, 212, 0.5);
+    
+
+    /* border: 1px solid yellowgreen; */
+}
+.list:hover {
+    transition: all 0.2s ease-in;
+
+    color: rgba(1, 124, 212, 0.8);
+
+    background-color: rgba(113, 215, 255, 0.1);
+    /* background-color:  rgba(172, 232, 255, 0); */
+    /* box-shadow: rgb(255, 75, 4) 1px 0 2px; */
+    /* box-shadow: inset 0px 0px 8px 1px rgba(112, 112, 112, 0.2); */
+    
+    /* text-shadow: rgb(172, 232, 255) 1px 0 10px; */
+}
+
+.inplay {
+    transition: all 0.5s ease-out;
+
+    color: rgb(1, 124, 212);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgb(1, 124, 212) 40%, rgb(1, 124, 212) 60%, rgba(255, 255, 255, 0) 70%); */
+
+    font-weight: bold;
+
+    /* background-color: rgba(113, 215, 255, 0.1); */
+}
+.inplay:hover {
+    transition: all 0.2s ease-in;
+
+    /* text-shadow: rgb(0, 0, 0) 1px 1px 1px; */
+    /* font-weight: bold; */
+
+    /* background-color: rgba(113, 215, 255, 0.1); */
+    /* box-shadow: inset 0px 0px 8px 1px rgba(32, 176, 219, 0.2); */
+}
+
+.list-head {
+    width: 5%;
+    height: 40px;
+    float: left;
+
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgb(1, 124, 212) 40%, rgb(1, 124, 212) 60%, rgba(255, 255, 255, 0) 70%); */
+    /* border: 1px solid darkorange; */
+}
+/* .list-head-inplay {
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, rgb(1, 124, 212) 40%, rgb(1, 124, 212) 60%, rgba(255, 255, 255, 0) 70%);
+} */
+
+.clear {
+    clear: both;
+}
+
+
+/* .clearfloat {
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+} */
+
+/* .li {
+    display: inline-block;
+    position: relative;
+
+    text-align: center;
+    
+    width: 30%;
+    height: 20px;
+    
+    border: 1px solid blue;
+} */
+
+
+
+
+
+
+
+

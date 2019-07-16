@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HeroPlayer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="source/if/iconfont.css">
+</head>
+
+<body>
+    <div class="heroplayer" id="id-heroplayer">
+        <div class="infos">
+            <video class="videos" id="id-video" src="mv/01.mp4" poster="img/cover.png"></video>
+            <!-- preload="metadata" -->
+
+            <div class="times">
+                <div class="nowTime" id="id-info-nowTime"></div>
+
+                <div class="progress" id="id-info-progress"></div>
+                <div class="progressBar" id="id-info-progressBar"></div>
+
+                <div class="allTime" id="id-info-allTime"></div>
+            </div>
+        </div>
+
+        <div class="tools">
+            <div class="tools-left">
+                <!-- <button class="button far fa-circle noloop" id="id-button-volume" data-state="noloop"></button> -->
+                <button class="button iconfont icon-youjiantou" id="id-button-loop" data-state="noloop"></button>
+                <button class="button iconfont icon-volume" id="id-button-mute" data-state="nomute"></button>
+                <!-- <button class="button" id="id-button-volume" data-state="nomute"></button> -->
+                <button class="button" id="id-button-volumeBar" data-state="nomute"></button>
+            </div>
+
+            <div class="tools-center">
+                <button class="button iconfont icon-play pause" id="id-button-play" data-state="play"></button>
+            </div>
+
+            <div class="tools-right">
+                <button class="button iconfont icon-full_screen" id="id-button-expand" data-state="normal"></button>
+                <button class="button iconfont icon-list2f" id="id-button-list" data-state="list"></button>
+            </div>
+        </div>
+
+        <div class="lists listsHidden" id="id-lists-main" data-listNum="3" data-nowPlay="0">
+            <div class="list inplay" data-listNum="0" data-url="mv/01.mp4">
+                <div class="list-head list-head-inplay"></div>
+                00 Digital Color
+            </div>
+
+            <div class="list" data-listNum="1" data-url="mv/02.mp4">
+                <div class="list-head"></div>
+                01 AirPod Promo
+            </div>
+
+            <div class="list" data-listNum="2" data-url="mv/03.mp4">
+                <div class="list-head"></div>
+                02 3D Touch Technology
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <script>bubbly();</script>
+    <script>
+        bubbly({
+            colorStart: "#fff4e6",
+            colorStop: "#ffe9e4",
+            blur: 1,
+            compose: "source-over",
+            bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+        });
+    </script> -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

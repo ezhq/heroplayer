@@ -1,5 +1,6 @@
 # Hero Player
-A Web Media Player by JavaScript
+基于 JavaScript 的网页视频播放器。
+*A Web Media Player by JavaScript.*
 
 # Live Demo
 [Hero Player](https://aurdes.com/heroplayer/ "在当前页面打开此演示项目，若想在新标签页打开，请通过 [Ctrl + 单击此链接] 或 [鼠标中键点击此链接] 进行访问.")
